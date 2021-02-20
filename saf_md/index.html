@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mājas Darbs</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/css/dataTables.bootstrap.min.css'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Tabulas layout -->
+
+    <div class="row">
+        <div class="container">
+
+            <h1>Mājas darbs</h1>
+            
+         <table class="table responsive" id="sort">
+                <thead>
+
+                    <!-- Kolonnu nosaukumi -->
+                    <tr>
+                        <th scope="col">Sensora nosaukums</th>
+                        <th scope="col">Temperature °C</th>
+                        <th scope="col">Humidity (%)</th>
+                        <th scope="col">CO₂ (ppm)</th>
+                        <th scope="col">Volumetric Water Content (%) </th>
+                    </tr>
+                </thead>
+
+                <tbody id="myTable">
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/dataTables.bootstrap.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.0/moment.min.js'></script>
+    <script type="text/javascript" src="function.js"></script>
+    <script type="text/javascript" src="sensorTypes.json"></script>
+    <script type="text/javascript" src="sensors.json"></script>
+    <script type="text/javascript" src="metrics.json"></script>
+
+
+</body>
+</html>
